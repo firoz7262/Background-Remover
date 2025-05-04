@@ -1,0 +1,238 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  background-color: rgba(254, 254, 254, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0 1px 4px;
+}
+
+.head1 {
+  cursor: pointer;
+}
+
+.head1 h1 {
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.head1 h1 .bg {
+  color: grey;
+}
+
+.head2 {
+  margin-left: 4rem;
+  text-align: center;
+}
+
+.head2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.head2 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.head2 ul li a:hover {
+  background-color: rgb(245, 242, 242);
+}
+
+.head3 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.head3 button {
+  padding: 10px 18px;
+  border: 0;
+  outline: 0;
+  border-radius: 13px;
+  cursor: pointer;
+  background-color: rgb(245, 243, 243);
+  font-weight: 500;
+  transition: all ease-in;
+}
+
+.head3 button:hover {
+  background-color: rgb(226, 218, 218);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(254, 254, 254, 0.9);
+  /* height: 60px; */
+  width: 100vw;
+  gap: 2rem;
+  padding: 20px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px;
+}
+
+.head1 {
+  cursor: pointer;
+}
+.head1 h1 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: larger;
+}
+
+.head1 h1 {
+  margin-top: 8px;
+}
+
+.icon {
+  margin: 10px;
+  /* margin-top: 20px; */
+  text-decoration: none;
+}
+.bg {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.navmenu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 15rem;
+}
+.navmenu ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navmenu ul li :hover {
+  background-color: lightgray;
+}
+
+.authButtons {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 10px;
+}
+.authButtons button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.authButtons button:hover {
+  background-color: lightgrey;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navmenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navmenu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    display: none;
+  }
+
+  .navmenu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navmenu ul li {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .navmenu ul li a {
+    width: 100%;
+    display: block;
+  }
+
+  .navmenu .authButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navmenu.navActive {
+    display: flex;
+  }
+
+  .head2,
+  .head3 {
+    display: none; /* Hide original layout on mobile */
+  }
+}

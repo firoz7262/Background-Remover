@@ -1,0 +1,192 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.inp {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: rgb(131, 131, 243);
+  border: 0;
+  border-radius: 9px;
+  margin-top: 30px;
+  color: aliceblue;
+  font-weight: 800;
+}
+
+.btn:hover {
+  background-color: rgb(92, 92, 235);
+  transform: translate(1.2);
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.downloadBtn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background-color: #45a049;
+}
+
+.upper {
+  height: 70%;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.upper input {
+  display: none;
+}
+
+.upper label {
+  font-size: 23px;
+  padding: 17px 21px;
+  background-color: blue;
+  border: none;
+  outline: 0;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.upper h3 {
+  margin-top: 25px;
+  text-align: left;
+  color: rgb(97, 96, 96);
+}
+
+.upper p {
+  margin-top: 12px;
+  color: grey;
+  font-size: 12px;
+} */
+
+.container {
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #5e2b97;
+}
+
+.upper {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.upper:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label[for="upload"] {
+  display: inline-block;
+  background-color: #0d5fc2;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+label[for="upload"]:hover {
+  background-color: #0a4288;
+}
+
+h3,
+p {
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  /* display: inline-block; */
+  background-color: #8c30f5;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7328d3;
+}
+
+.result {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.downloadBtn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #38bdf8;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background-color: #0ea5e9;
+}

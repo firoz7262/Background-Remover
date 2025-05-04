@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+   height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  margin-top: 50px;
+  position: absolute; 
+  }  */
+
+.container {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+.sec1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 150px 0;
+}
+
+.left {
+  height: 400px;
+  width: 400px;
+
+  text-align: center;
+}
+
+.left img {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+}
+
+.left h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.left h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.left span {
+  background-color: #ffc537;
+  padding: 6px;
+  border-radius: 9px;
+}
+
+.right {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  /* background-color: blanchedalmond; */
+  display: flex;
+  flex-direction: column;
+  transform: translateY(130px);
+}
+
+.upper {
+  height: 70%;
+  border-radius: 12px;
+  background-color: rgb(246, 246, 246);
+
+  box-shadow: 0 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.upper input {
+  display: none;
+}
+
+.upper label {
+  font-size: 23px;
+  padding: 17px 21px;
+  background-color: blue;
+  border: none;
+  outline: 0;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upper h3 {
+  margin-top: 25px;
+  text-align: left;
+  color: rgb(97, 96, 96);
+}
+
+.upper p {
+  margin-top: 12px;
+  color: grey;
+  font-size: 12px;
+}
+
+.sec2 {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec2 h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.sec2 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 20px 0;
+}
+
+.sec2 .buttons button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  transition: backgroundcolor 0.3s ease;
+}
+
+.sec2 .buttons button:hover {
+  background-color: rgb(194, 190, 190);
+}
+
+.sec2 .images {
+  /* height: 450px;
+  width: 700px;
+  background-color: #ffc537; */
+  height: 500px;
+  width: 800px;
+  background-color: aquamarine;
+  margin-top: 20px;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 8px;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.sec3 {
+  height: auto;
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Helps with responsiveness */
+  gap: 2rem; /* Adds spacing between items */
+}
+
+.content {
+  flex: 1 1 40%;
+  max-width: 600px;
+  font-size: 1.7rem;
+  height: auto; /* Let content height grow naturally */
+}
+
+.content p {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.pic {
+  flex: 1 1 30%;
+  max-width: 400px;
+  height: 400px;
+  background-image: url("all-pages-2.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.sec4 {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffc83e;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.sec4 .reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.review {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  padding: 10px;
+  margin-top: 5rem;
+}
+
+.review .icon1 {
+  height: 100px;
+  width: 150px;
+  background-image: url("sonymusic.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  margin-top: 1rem;
+}
+
+.review h3 {
+  margin: 5rem 0;
+}
+
+.review .img1 {
+  margin-top: 110px;
+  height: 100px;
+  width: 100px;
+  background-image: url("barso.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.review .icon2 {
+  height: 100px;
+  width: 150px;
+  background-image: url("phoenix.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.review .img2 {
+  height: 100px;
+  width: 100px;
+  background-image: url("marc.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.review .icon3 {
+  height: 100px;
+  width: 150px;
+  background-image: url("takecrunch.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.review .img3 {
+  height: 100px;
+  width: 100px;
+  background-image: url("taylor.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.hr {
+  margin-top: 8rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f5f5f5;
+  color: #333;
+  margin-top: 15rem;
+}
+
+.footersection {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footesection h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.footersection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footersection ul li {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .sec1 {
+    flex-direction: column;
+    margin: 100px 0;
+  }
+
+  .left,
+  .right {
+    width: 90%;
+    text-align: center;
+  }
+
+  .sec2 .images {
+    width: 90%;
+    height: 300px;
+  }
+
+  .sec3 {
+    flex-direction: column;
+  }
+
+  .pic {
+    flex: none;
+    width: 90%;
+    height: 300px;
+  }
+
+  .content {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footersection {
+    width: 100%;
+  }
+
+  .sec4 .reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .left img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sec2 .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sec2 .buttons button {
+    width: 80%;
+  }
+
+  .upper label {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  .review {
+    width: 90%;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .footersection {
+    margin: 10px 0;
+  }
+
+  .pic {
+    flex: none;
+  }
+}
